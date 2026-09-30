@@ -16,13 +16,10 @@ export async function CriarUsuario(usuario) {
     if (existe) {
         throw new Error('Esse email já está cadastrado');
     }
-    else {
-        token;
-    }
 
     const resposta = await DbUsuario.NovoUsuario(usuario);
 
-    return { resposta, token };
+    return resposta;
 }
 
 export async function Login(email, senha) {

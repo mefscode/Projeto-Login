@@ -21,10 +21,10 @@ endpoints.get('/health', validarToken, (req, resp) => {
 endpoints.post('/criar', async (req, resp) => {
     try {
         const usuario = req.body;
-        const { resposta, token } = await UsuarioService.CriarUsuario(usuario);
+        const resposta = await UsuarioService.CriarUsuario(usuario);
 
         resp.send({
-            resposta: `O ID é ${resposta} e o token é ${token}`
+            resposta: `O ID é ${resposta}`
         })
     }
     catch (err) {
