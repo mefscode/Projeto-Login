@@ -8,3 +8,12 @@ nome VARCHAR(100),
 email VARCHAR(100),
 senha VARCHAR(100)
 );
+
+CREATE TABLE usuarios_alt(
+id_alt INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(100),
+email VARCHAR(100),
+senha VARCHAR(100)
+);
+
+select * from usuarios;

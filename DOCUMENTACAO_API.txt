@@ -15,7 +15,8 @@ Exemplo da requisição:
 
 {"nome":"Julia",
 "email":"Julia@exemplo.com",
-"senha":"minhaSenha123"}'
+"senha":"minhaSenha123"
+}'
 
 
 
