@@ -1,0 +1,37 @@
+DOCUMENTAÇÃO DA API
+
+1 - Listar Usuários
+Método: GET
+Rota: '/listar'
+Não necessita Token
+Exemplo da requisição:
+
+
+2 - Criar Usuário
+Método: POST
+Rota: '/criar'
+Não necessita Token
+Exemplo da requisição:
+
+{"nome":"Julia",
+"email":"Julia@exemplo.com",
+"senha":"minhaSenha123"}'
+
+
+
+3 - Login
+Método: POST
+Rota: '/login'
+Não necessita Token
+Exemplo da requisição:
+
+{"email":"maria@exemplo.com",
+"senha":"minhaSenha123"}'
+
+4 - Health
+Método: GET
+Rota: '/health'
+Necessita Token (Bearer Token)
+Exemplo da requisição:
+http://localhost:3000/health
+
